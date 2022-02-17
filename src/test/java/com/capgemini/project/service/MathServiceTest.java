@@ -1,12 +1,11 @@
 package com.capgemini.project.service;
-import com.capgemini.project.service.DataValidationException;
-
 import static org.junit.Assert.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import org.junit.Before;
 import org.junit.Test;
 
+import com.capgemini.project.exceptions.DataValidationException;
 import com.capgemini.project.model.InputData;
 import com.capgemini.project.model.ResultData;
 

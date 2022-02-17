@@ -1,4 +1,4 @@
-package com.capgemini.project.service;
+package com.capgemini.project.exceptions;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ControllerAdvice;

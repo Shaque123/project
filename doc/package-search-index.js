@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","url":"allpackages-index.html"},{"l":"com.capgemini.project.exceptions"},{"l":"com.capgemini.project.model"},{"l":"com.capgemini.project.service"}]

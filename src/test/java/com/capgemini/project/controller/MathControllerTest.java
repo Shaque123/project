@@ -23,7 +23,7 @@ public class MathControllerTest
     @Mock MathService mathService;
       
     @Mock ResultData resultData;
-    //TODO check inject mocks
+    
     @InjectMocks
     MathController mathController;
 
@@ -37,7 +37,6 @@ public class MathControllerTest
         data.setInputData(input);
         
         Mockito.when(mathService.performCalculation(data)).thenReturn(resultData);
-        //MathController mathController = new MathController(mathService);
         assertEquals(resultData, mathController.performCalculation(data)); 
     }
 }

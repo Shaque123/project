@@ -1,4 +1,4 @@
-package com.capgemini.project.service;
+package com.capgemini.project.exceptions;
 
 /** Custom exception to handle data validation related exception
  * @author SHaque
@@ -6,7 +6,7 @@ package com.capgemini.project.service;
  */
 public class DataValidationException extends RuntimeException
 {
-    DataValidationException(String message)
+    public DataValidationException(String message)
     {
         super(message);
     }

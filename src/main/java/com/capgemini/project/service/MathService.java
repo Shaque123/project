@@ -8,6 +8,7 @@ import java.util.stream.IntStream;
 
 import org.springframework.stereotype.Service;
 
+import com.capgemini.project.exceptions.DataValidationException;
 import com.capgemini.project.model.InputData;
 import com.capgemini.project.model.ResultData;
 
@@ -34,8 +35,12 @@ public class MathService
         if(inputData == null)
             throw new DataValidationException("Null input");
         int [] data = inputData.getInputData();
+
         if(data == null || data.length < 3)
-           return new ResultData("Invalid input size");
+        {
+            return new ResultData("Invalid input size"); 
+        }
+           
         //sorts the list and take first three element and find sum of squares
         int sum = IntStream.of(data).sorted().skip(data.length -3 ).map(x -> x * x).sum(); 
         String result =df.format(Math.sqrt(sum));

@@ -1,0 +1,4 @@
+com.capgemini.project.controller
+com.capgemini.project.exceptions
+com.capgemini.project.model
+com.capgemini.project.service
